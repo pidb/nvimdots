@@ -232,6 +232,8 @@ local plug_map = {
 		:with_desc("editn: Change current direrctory by zoxide"),
 	["n|<leader>fb"] = map_cu("Telescope buffers"):with_noremap():with_silent():with_desc("find: Buffer opened"),
 	["n|<leader>fs"] = map_cu("Telescope grep_string"):with_noremap():with_silent():with_desc("find: Current word"),
+	["n|<Leader>fl"] = map_cu("lua require('telescope.builtin').current_buffer_fuzzy_find()"):with_noremap():with_silent(),
+	["n|<Leader>ft"] = map_cu("lua require('telescope.builtin').lsp_document_symbols()"):with_noremap():with_silent(),
 	-- Plugin accelerate-jk
 	["n|j"] = map_callback(function()
 		return t("<Plug>(accelerated_jk_gj)")

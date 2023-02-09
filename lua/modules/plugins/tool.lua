@@ -1,5 +1,8 @@
 local tool = {}
 
+tool["wakatime/vim-wakatime"] = {
+	lazy = true,
+}
 tool["tpope/vim-fugitive"] = {
 	lazy = true,
 	cmd = { "Git", "G" },
