@@ -30,6 +30,6 @@ settings["colorscheme"] = "catppuccin"
 -- Set background color to use here.
 -- Useful for when you want to use a colorscheme that has a light and dark variant like `edge`.
 -- Available values are: `dark`, `light`.
-settings["background"] = "dark"
+settings["background"] = "light"
 
 return settings

@@ -15,6 +15,11 @@ ui["catppuccin/nvim"] = {
 	name = "catppuccin",
 	config = require("ui.catppuccin"),
 }
+ui["Mofiqul/vscode.nvim"] = {
+	lazy = false,
+	name = "vscode",
+	config = require("ui.vscode"),
+}
 ui["sainnhe/edge"] = {
 	lazy = true,
 	config = require("ui.edge"),

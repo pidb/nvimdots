@@ -63,5 +63,54 @@ return function()
 		opts = vim.tbl_deep_extend("force", opts, catppuccin_hl_overwrite)
 	end
 
+	if vim.g.colors_name == "vscode" then
+		local vscode_hl_overwrite = {
+			highlights = {
+				fill = {
+					fg = { attribute = "fg", highlight = "Normal" },
+					bg = { attribute = "bg", highlight = "StatusLineNC" },
+				},
+				background = {
+					fg = { attribute = "fg", highlight = "Normal" },
+					bg = { attribute = "bg", highlight = "StatusLine" },
+				},
+				buffer_visible = {
+					fg = { attribute = "fg", highlight = "Normal" },
+					bg = { attribute = "bg", highlight = "Normal" },
+				},
+				buffer_selected = {
+					fg = { attribute = "fg", highlight = "Normal" },
+					bg = { attribute = "bg", highlight = "Normal" },
+				},
+				separator = {
+					fg = { attribute = "bg", highlight = "Normal" },
+					bg = { attribute = "bg", highlight = "StatusLine" },
+				},
+				separator_selected = {
+					fg = { attribute = "fg", highlight = "Special" },
+					bg = { attribute = "bg", highlight = "Normal" },
+				},
+				separator_visible = {
+					fg = { attribute = "fg", highlight = "Normal" },
+					bg = { attribute = "bg", highlight = "StatusLineNC" },
+				},
+				close_button = {
+					fg = { attribute = "fg", highlight = "Normal" },
+					bg = { attribute = "bg", highlight = "StatusLine" },
+				},
+				close_button_selected = {
+					fg = { attribute = "fg", highlight = "Normal" },
+					bg = { attribute = "bg", highlight = "Normal" },
+				},
+				close_button_visible = {
+					fg = { attribute = "fg", highlight = "Normal" },
+					bg = { attribute = "bg", highlight = "Normal" },
+				},
+			},
+		}
+
+		opts = vim.tbl_deep_extend("force", opts, vscode_hl_overwrite)
+	end
+
 	require("bufferline").setup(opts)
 end
