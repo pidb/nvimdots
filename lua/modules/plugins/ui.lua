@@ -78,5 +78,33 @@ ui["edluffy/specs.nvim"] = {
 	event = "CursorMoved",
 	config = require("ui.specs"),
 }
-
+ui["Rigellute/rigel"] = {
+	lazy = false,
+	name = "rigel",
+}
+ui["altercation/vim-colors-solarized"] = {
+	lazy = false,
+	name = "solarized",
+}
+ui["morhetz/gruvbox"] = {
+	lazy = false,
+	name = "gruvbox",
+}
+ui["tomasr/molokai"] = {
+	lazy = false,
+	name = "molokai",
+}
+ui["lifepillar/vim-solarized8"] = {
+	lazy = false,
+	name = "solarized8",
+}
+ui["rose-pine/neovim"] = {
+	lazy = false,
+	name = "neovim",
+}
+ui["projekt0n/github-nvim-theme"] = {
+	lazy = false,
+	name = "github",
+	config = require("ui.github"),
+}
 return ui
