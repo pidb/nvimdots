@@ -33,16 +33,10 @@ settings["palette_overwrite"] = {}
 settings["colorscheme"] = "catppuccin"
 
 -- Set background color to use here.
-<<<<<<< HEAD
--- Useful for when you want to use a colorscheme that has a light and dark variant like `edge`.
--- Available values are: `dark`, `light`.
-settings["background"] = "light"
-=======
 -- Useful if you would like to use a colorscheme that has a light and dark variant like `edge`.
 -- Valid values are: `dark`, `light`.
 ---@type "dark"|"light"
 settings["background"] = "dark"
->>>>>>> main
 
 -- Filetypes in this list will skip lsp formatting if rhs is true
 ---@type table<string, boolean>
